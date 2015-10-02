@@ -1,7 +1,5 @@
 import org.apache.log4j.Logger;
 
-import java.util.Arrays;
-
 /**
  * Java Main program to act as client using the Crawler application.
  */
@@ -14,7 +12,6 @@ public class Main {
     static Logger LOG = Logger.getLogger(Main.class);
 
     public static void main(String[] args) {
-        LOG.info(Arrays.toString(args));
         LOG.info("Beginning crawl.");
 
         Crawler.run(args[0], 1);
